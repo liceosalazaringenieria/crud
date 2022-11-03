@@ -14,7 +14,7 @@ async function getConnection(){
     try{
         const pool = await sqls.connect(dbsinfo);
         return pool;
-    }catch(errror){
+    }catch(error){
         console.error(error);
     }
 }
